@@ -8682,8 +8682,8 @@ readers do not read off random characters that represent icons */
     font-family: 'Font Awesome 5 Brands';
     font-style: normal;
     font-weight: 400;
-    src: url("https://www.indonez.com/error/404.html");
-    src: url("https://www.indonez.com/error/404.html#iefix") format("embedded-opentype"), url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff"), url("https://www.indonez.com/error/404.html") format("truetype"), url("https://www.indonez.com/error/404.html#fontawesome") format("svg");
+    src: url("https://www.indonez.com/error/404");
+    src: url("https://www.indonez.com/error/404#iefix") format("embedded-opentype"), url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff"), url("https://www.indonez.com/error/404") format("truetype"), url("https://www.indonez.com/error/404#fontawesome") format("svg");
 }
 
 .fab {
@@ -8696,8 +8696,8 @@ readers do not read off random characters that represent icons */
     font-family: 'Font Awesome 5 Free';
     font-style: normal;
     font-weight: 900;
-    src: url("https://www.indonez.com/error/404.html");
-    src: url("https://www.indonez.com/error/404.html#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff"), url("https://www.indonez.com/error/404.html") format("truetype"), url("https://www.indonez.com/error/404.html#fontawesome") format("svg");
+    src: url("https://www.indonez.com/error/404");
+    src: url("https://www.indonez.com/error/404#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff"), url("https://www.indonez.com/error/404") format("truetype"), url("https://www.indonez.com/error/404#fontawesome") format("svg");
 }
 
 .fa,
@@ -9422,12 +9422,12 @@ readers do not read off random characters that represent icons */
 }
 
 .in-equity-13 .uk-subnav li a {
-    color: #4886d9;
+    color: #181818;
 }
 
 .in-equity-13 .uk-subnav li .in-icon-wrap {
-    color: #4886d9;
-    background-color: #dce8f8;
+    color: #dce8f8;
+    background-color: #FCB42D;
 }
 
 .in-equity-13 .uk-subnav-divider> :nth-child(n+2):not(.uk-first-column)::before {
@@ -9795,4 +9795,41 @@ readers do not read off random characters that represent icons */
         height: 650px !important;
     }
 
+}
+
+.uk-footer-bg{
+    background: #181818;
+}
+
+footer .in-footer-warning {
+    padding: 0 28px 6px;
+    border: 1px solid rgba(219, 213, 213, 0.25);
+    border-radius: 12px;
+}
+
+footer .in-footer-warning h5 {
+    margin-top: -9px;
+    margin-left: -8px;
+}
+
+.image-center{
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-bottom: 30px;
+}
+
+.select-style{
+    margin-left: 40px;
+    border-radius: 10px;
+    padding-left: 12px;
+    color: #707070;
+}
+
+@media (max-width: 1200px){
+    .select-style{
+        margin-left: 30px;
+        border-radius: 10px;
+        padding-left: 12px;
+        color: #707070;
+    }
 }
