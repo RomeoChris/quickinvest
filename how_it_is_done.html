@@ -166,8 +166,11 @@
                         </div>
                     </div>
                     <div class="uk-navbar-right">
-                        <div class="uk-navbar-item uk-visible@m in-optional-nav">
-                            <a href="login" class="uk-button uk-button-primary uk-border-rounded">Get Started<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                        <div class="uk-navbar-item uk-visible@m in-optional-nav uk-width-1-2" style="padding-left: 2px !important;">
+                            <a href="login" class="uk-button uk-button-primary uk-border-rounded" style="background-color: #a8a4a4;">Sign-in</a>
+                        </div>
+                        <div class="uk-navbar-item uk-visible@m in-optional-nav uk-width-1-2" style="padding-left: 2px !important;">
+                            <a href="register" class="uk-button uk-button-primary uk-border-rounded">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -238,21 +241,21 @@
                     <div>
                         <h4 class="uk-heading-bullet">Legal</h4>
                         <ul class="uk-list uk-link-text">
-                            <li><a href="{{$settings->contact_emmail}}terms">Terms &amp; Conditions</a></li>
+                            <li><a href="{{$settings->contact_email}}terms">Terms &amp; Conditions</a></li>
                         </ul>
                     </div>
                     <div class="uk-visible@m">
                         <h4 class="uk-heading-bullet">Support</h4>
                         <ul class="uk-list uk-link-text">
-                            <li><a href="{{$settings->contact_emmail}}about">About Us</a></li>
-                            <li><a href="{{$settings->contact_emmail}}contact">Contact Us</a></li>
+                            <li><a href="{{$settings->contact_email}}about">About Us</a></li>
+                            <li><a href="{{$settings->contact_email}}contact">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="uk-flex-first uk-flex-last@m">
                         <ul class="uk-list uk-link-text">
                             <li><img class="uk-margin-small-bottom" src="images/{{$settings->logo}}" data-src="images/{{$settings->logo}}" alt="logo" width="130" height="36"></li>
                             <li><a href="#"><i class="fas fa-phone uk-margin-small-right"></i> {{$settings->contact_number}}</a></li>
-                            <li><a href="#"><i class="fas fa-envelope uk-margin-small-right"></i> {{$settings->contact_emmail}}</a></li>
+                            <li><a href="#"><i class="fas fa-envelope uk-margin-small-right"></i> {{$settings->contact_email}}</a></li>
                             <li><a href="#"><i class="fas fa-map-marker-alt uk-margin-small-right"></i> 514 S. Magnolia St. Orlando, FL 32806 </a></li>
                         </ul>
                     </div>

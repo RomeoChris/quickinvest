@@ -166,8 +166,11 @@
                         </div>
                     </div>
                     <div class="uk-navbar-right">
-                        <div class="uk-navbar-item uk-visible@m in-optional-nav">
-                            <a href="login" class="uk-button uk-button-primary uk-border-rounded">Get Started<i class="fas fa-arrow-circle-right uk-margin-small-left"></i></a>
+                        <div class="uk-navbar-item uk-visible@m in-optional-nav uk-width-1-2" style="padding-left: 2px !important;">
+                            <a href="login" class="uk-button uk-button-primary uk-border-rounded" style="background-color: #a8a4a4;">Sign-in</a>
+                        </div>
+                        <div class="uk-navbar-item uk-visible@m in-optional-nav uk-width-1-2" style="padding-left: 2px !important;">
+                            <a href="register" class="uk-button uk-button-primary uk-border-rounded">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -190,7 +193,7 @@
         <div class="uk-section uk-preserve-color uk-background-contain uk-background-center in-equity-15" data-src="" data-uk-img>
             <div class="uk-container uk-margin-top uk-margin-medium-bottom">
                 <div class="uk-grid">
-                    <div class="uk-width-1-1@m">
+                    <div class="uk-width-1-2@m">
                         <div>
                             <h1><span class="in-highlight">Bonds </span> (aka Debt Market)</h1>
                         </div>
@@ -198,10 +201,23 @@
                             The bond market—often called the debt market, fixed-income market, or credit market—is the collective name given to all trades and issues of debt securities. Governments typically issue bonds in order to raise capital to pay down debts or fund infrastructural improvements. Publicly traded companies issue bonds when they need to finance business expansion projects or maintain ongoing operations. 
                             <br>
                             <br>
+                            <img class="in-img-mockup uk-margin-small-top uk-margin-small-bottom" src="images/{{$settings->logo}}" data-src="img/bonds-trade.png" alt="mockup" width="643" data-height="300" data-uk-img style="height: auto;">
+                            <br>
                             Just as the S&P 500 and the Russell indices track equities, big-name bond indices like the Bloomberg Aggregate Bond Index, the Merrill Lynch Domestic Master, and the Citigroup U.S. Broad Investment-Grade Bond Index track and measure corporate bond portfolio performance. Many bond indices are members of broader indices that measure the performances of global bond portfolios.
                             <br>
                             <br>
-                            The Bloomberg (formerly Lehman Brothers) Government/Corporate Bond Index, also known as the 'Agg', is an important market-weighted benchmark index. Like other benchmark indexes, it provides investors with a standard against which they can evaluate the performance of a fund or security. As the name implies, this index includes both government and corporate bonds. The index consists of investment-grade corporate debt instruments with issues higher than $100 million and maturities of one year or more. The Agg is a total return benchmark index for many bond funds and exchange-traded funds (ETFs). 
+                            The Bloomberg (formerly Lehman Brothers) Government/Corporate Bond Index, also known as the 'Agg', is an important market-weighted benchmark index. Like other benchmark indexes, it provides investors with a standard against which they can evaluate the performance of a fund or security. As the name implies, this index includes both government and corporate bonds. The index consists of investment-grade corporate debt instruments with issues higher than $100 million and maturities of one year or more. The Agg is a total return benchmark index for many bond funds and exchange-traded funds (ETFs).
+                        </p>
+                    </div>
+                    <div class="uk-width-1-2@m">
+                        <div>
+                            <h1><span class="in-highlight"></span></h1>
+                        </div>
+                        <p class="uk-text-lead uk-margin-remove-top uk-text-justify" style="color: black;">
+                            To trade bonds effectively, you must understand why bond prices fluctuate. When you purchase a bond, you are essentially issuing a loan to a government or corporation. The loan pays a fixed interest, but the yield fluctuates depending on the price of the bond. The price of a bond can be at par, premium or discount. A premium bond is attractive to the issuer, but not to an investor, whereas a discount bond is attractive to an investor, but not the issuer. In other words, discount bonds will experience more demand, whereas premium bonds will witness more supply. Aside from supply and demand forces, bond prices can also be influenced by the credit quality of the issuer and the term to maturity.
+                            <br>
+                            <br>
+                            <img class="in-img-mockup uk-margin-small-top uk-margin-small-bottom" src="images/{{$settings->logo}}" data-src="img/bonds-trade2.jpg" alt="mockup" width="643" data-height="300" data-uk-img style="height: auto;">
                             <br>
                             <br>
                             The bond market is among the largest asset markets in the world⁠—almost twice as large in terms of notional value as the stock market. The bond market includes debt securities issued by governments and corporations, both domestic and foreign. Bonds may also be structured with fixed or variable interest rates and may or may not be convertible into equity. Bonds are typically thought to be less volatile than stocks, since they pay regular interest and return principal upon maturity. However, the bond market can lose value, and credit risk exists. Most financial professionals advise that all investors contribute at least some portion of their portfolios to bonds to help diversify. 
@@ -230,21 +246,21 @@
                     <div>
                         <h4 class="uk-heading-bullet">Legal</h4>
                         <ul class="uk-list uk-link-text">
-                            <li><a href="{{$settings->contact_emmail}}terms">Terms &amp; Conditions</a></li>
+                            <li><a href="{{$settings->contact_email}}terms">Terms &amp; Conditions</a></li>
                         </ul>
                     </div>
                     <div class="uk-visible@m">
                         <h4 class="uk-heading-bullet">Support</h4>
                         <ul class="uk-list uk-link-text">
-                            <li><a href="{{$settings->contact_emmail}}about">About Us</a></li>
-                            <li><a href="{{$settings->contact_emmail}}contact">Contact Us</a></li>
+                            <li><a href="{{$settings->contact_email}}about">About Us</a></li>
+                            <li><a href="{{$settings->contact_email}}contact">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="uk-flex-first uk-flex-last@m">
                         <ul class="uk-list uk-link-text">
                             <li><img class="uk-margin-small-bottom" src="images/{{$settings->logo}}" data-src="images/{{$settings->logo}}" alt="logo" width="130" height="36"></li>
                             <li><a href="#"><i class="fas fa-phone uk-margin-small-right"></i> {{$settings->contact_number}}</a></li>
-                            <li><a href="#"><i class="fas fa-envelope uk-margin-small-right"></i> {{$settings->contact_emmail}}</a></li>
+                            <li><a href="#"><i class="fas fa-envelope uk-margin-small-right"></i> {{$settings->contact_email}}</a></li>
                             <li><a href="#"><i class="fas fa-map-marker-alt uk-margin-small-right"></i> 514 S. Magnolia St. Orlando, FL 32806 </a></li>
                         </ul>
                     </div>
