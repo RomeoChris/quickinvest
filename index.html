@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#FCB42D" />
     <!-- Site Properties -->
-    <title>Homepage - Zingkrypt</title>
+    <title>{{$settings->site_title}} - {{$settings->site_name}}</title>
     <!-- critical preload -->
     <link rel="preload" href="js/vendors/uikit.min.js" as="script">
     <link rel="preload" href="css/vendors/uikit.min.css" as="style">
@@ -44,7 +44,7 @@
                         <div class="uk-navbar-item">
                             <!-- logo begin -->
                             <a class="uk-logo" href="index">
-                                <img src="img/in-lazy.gif" data-src="img/in-logo.svg" alt="logo" width="146" height="39" data-uk-img>
+                                <img src="images/{{$settings->logo}}" data-src="images/{{$settings->logo}}" alt="logo" width="146" height="39" data-uk-img>
                             </a>
                             <!-- logo end -->
                             <!-- navigation begin -->
@@ -86,13 +86,13 @@
                                                 <a href="bitcoin.html">Cryptocurrency</a>
                                               </li>
                                               <li>
-                                                <a href="#">Gold</a>
+                                                <a href="gold.html">Gold</a>
                                               </li>
                                               <li>
-                                                <a href="#">Real Estate</a></a>
+                                                <a href="real_estate.html">Real Estate</a></a>
                                               </li>
                                               <li>
-                                                <a href="#">Bonds</a></a>
+                                                <a href="bonds.html">Bonds</a></a>
                                               </li>
                                         </ul>
                                     </div>
@@ -193,7 +193,7 @@
                                         <div>
                                             <div class="uk-card uk-card-small uk-card-secondary uk-card-body uk-border-rounded uk-flex uk-flex-middle">
                                                 <div class="in-symbol-logo">
-                                                    <img src="img/in-lazy.gif" data-src="img/in-symbol-tesla.svg" alt="ticker" width="28" height="28" data-uk-img>
+                                                    <img src="images/{{$settings->logo}}" data-src="img/in-symbol-tesla.svg" alt="ticker" width="28" height="28" data-uk-img>
                                                 </div>
                                                 <div class="in-price">
                                                     <h6 class="uk-margin-remove">TSLA<span class="uk-text-small"></span></h6>
@@ -204,7 +204,7 @@
                                         <div>
                                             <div class="uk-card uk-card-small uk-card-secondary uk-card-body uk-border-rounded uk-flex uk-flex-middle">
                                                 <div class="in-symbol-logo">
-                                                    <img src="img/in-lazy.gif" data-src="img/in-symbol-google.svg" alt="ticker" width="28" height="28" data-uk-img>
+                                                    <img src="images/{{$settings->logo}}" data-src="img/in-symbol-google.svg" alt="ticker" width="28" height="28" data-uk-img>
                                                 </div>
                                                 <div class="in-price">
                                                     <h6 class="uk-margin-remove">GOOGL<span class="uk-text-small"></span></h6>
@@ -215,7 +215,7 @@
                                         <div class="uk-visible@m">
                                             <div class="uk-card uk-card-small uk-card-secondary uk-card-body uk-border-rounded uk-flex uk-flex-middle">
                                                 <div class="in-symbol-logo">
-                                                    <img src="img/in-lazy.gif" data-src="img/in-symbol-apple.svg" alt="ticker" width="28" height="28" data-uk-img>
+                                                    <img src="images/{{$settings->logo}}" data-src="img/in-symbol-apple.svg" alt="ticker" width="28" height="28" data-uk-img>
                                                 </div>
                                                 <div class="in-price">
                                                     <h6 class="uk-margin-remove">AAPL<span class="uk-text-small"></span></h6>
@@ -227,7 +227,7 @@
                                     <p class="in-badge-text uk-text-small uk-margin-remove-bottom uk-visible@m"><span class="uk-label uk-label-success in-label-small">Note</span>Trading in Forex/ CFDs is highly speculative and carries a high level of risk.</p>
                                 </div>
                                 <div class="in-slide-img">
-                                    <img class=" home-slider-img" src="img/in-lazy.gif" data-src="img/in-equity-slide-1.png" alt="image-slide" width="652" height="746" data-uk-img>
+                                    <img class=" home-slider-img" src="images/{{$settings->logo}}" data-src="img/in-equity-slide-1.png" alt="image-slide" width="652" height="746" data-uk-img>
                                 </div>
                             </div>
                         </div>
@@ -244,7 +244,7 @@
                                         <div>
                                             <div class="uk-card uk-card-small uk-card-secondary uk-card-body uk-border-rounded uk-flex uk-flex-middle">
                                                 <div class="in-symbol-logo">
-                                                    <img src="img/in-lazy.gif" data-src="img/in-symbol-mcdonalds.svg" alt="ticker" width="28" height="28" data-uk-img>
+                                                    <img src="images/{{$settings->logo}}" data-src="img/in-symbol-mcdonalds.svg" alt="ticker" width="28" height="28" data-uk-img>
                                                 </div>
                                                 <div class="in-price">
                                                     <h6 class="uk-margin-remove">MCD<span class="uk-text-small"></span></h6>
@@ -255,7 +255,7 @@
                                         <div>
                                             <div class="uk-card uk-card-small uk-card-secondary uk-card-body uk-border-rounded uk-flex uk-flex-middle">
                                                 <div class="in-symbol-logo">
-                                                    <img src="img/in-lazy.gif" data-src="img/in-symbol-amazon.svg" alt="ticker" width="28" height="28" data-uk-img>
+                                                    <img src="images/{{$settings->logo}}" data-src="img/in-symbol-amazon.svg" alt="ticker" width="28" height="28" data-uk-img>
                                                 </div>
                                                 <div class="in-price">
                                                     <h6 class="uk-margin-remove">AMZN<span class="uk-text-small"></span></h6>
@@ -266,7 +266,7 @@
                                         <div class="uk-visible@m">
                                             <div class="uk-card uk-card-small uk-card-secondary uk-card-body uk-border-rounded uk-flex uk-flex-middle">
                                                 <div class="in-symbol-logo">
-                                                    <img src="img/in-lazy.gif" data-src="img/in-symbol-microsoft.svg" alt="ticker" width="28" height="28" data-uk-img>
+                                                    <img src="images/{{$settings->logo}}" data-src="img/in-symbol-microsoft.svg" alt="ticker" width="28" height="28" data-uk-img>
                                                 </div>
                                                 <div class="in-price">
                                                     <h6 class="uk-margin-remove">MSFT<span class="uk-text-small"></span></h6>
@@ -278,7 +278,7 @@
                                     <p class="in-badge-text uk-text-small uk-margin-remove-bottom uk-visible@m"><span class="uk-label uk-label-success in-label-small">Note</span>Trading in Forex/ CFDs is highly speculative and carries a high level of risk.</p>
                                 </div>
                                 <div class="in-slide-img">
-                                    <img class=" home-slider-img" src="img/in-lazy.gif" data-src="img/in-equity-slide-2.png" alt="image-slide" width="652" height="746" data-uk-img>
+                                    <img class=" home-slider-img" src="images/{{$settings->logo}}" data-src="img/in-equity-slide-2.png" alt="image-slide" width="652" height="746" data-uk-img>
                                 </div>
                             </div>
                         </div>
@@ -313,7 +313,7 @@
                             <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-medium">
                                 <div class="uk-flex uk-flex-middle">
                                     <div class="uk-margin-right">
-                                        <img src="img/in-lazy.gif" data-src="img/in-equity-11-icon-1.svg" alt="icon-1" width="128" data-height data-uk-img>
+                                        <img src="images/{{$settings->logo}}" data-src="img/in-equity-11-icon-1.svg" alt="icon-1" width="128" data-height data-uk-img>
                                     </div>
                                     <div>
                                         <h5 class="uk-margin-small-bottom">Forex Market</h5>
@@ -326,7 +326,7 @@
                             <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-medium">
                                 <div class="uk-flex uk-flex-middle">
                                     <div class="uk-margin-right">
-                                        <img src="img/in-lazy.gif" data-src="img/in-equity-11-icon-5.svg" alt="icon-5" width="128" data-height data-uk-img>
+                                        <img src="images/{{$settings->logo}}" data-src="img/in-equity-11-icon-5.svg" alt="icon-5" width="128" data-height data-uk-img>
                                     </div>
                                     <div>
                                         <h5 class="uk-margin-small-bottom">Crypto Market</h5>
@@ -339,7 +339,7 @@
                             <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-medium">
                                 <div class="uk-flex uk-flex-middle">
                                     <div class="uk-margin-right">
-                                        <img src="img/in-lazy.gif" data-src="img/in-equity-11-icon-4.svg" alt="icon-4" width="128" data-height data-uk-img>
+                                        <img src="images/{{$settings->logo}}" data-src="img/in-equity-11-icon-4.svg" alt="icon-4" width="128" data-height data-uk-img>
                                     </div>
                                     <div>
                                         <h5 class="uk-margin-small-bottom">Gold Market</h5>
@@ -352,7 +352,7 @@
                             <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-medium">
                                 <div class="uk-flex uk-flex-middle">
                                     <div class="uk-margin-right">
-                                        <img src="img/in-lazy.gif" data-src="img/in-equity-11-icon-bm.svg" alt="icon-2" width="128" data-height data-uk-img>
+                                        <img src="images/{{$settings->logo}}" data-src="img/in-equity-11-icon-bm.svg" alt="icon-2" width="128" data-height data-uk-img>
                                     </div>
                                     <div>
                                         <h5 class="uk-margin-small-bottom">Bond Market</h5>
@@ -365,7 +365,7 @@
                             <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-medium">
                                 <div class="uk-flex uk-flex-middle">
                                     <div class="uk-margin-right">
-                                        <img src="img/in-lazy.gif" data-src="img/in-equity-11-icon-3.svg" alt="icon-3" width="128" data-height data-uk-img>
+                                        <img src="images/{{$settings->logo}}" data-src="img/in-equity-11-icon-3.svg" alt="icon-3" width="128" data-height data-uk-img>
                                     </div>
                                     <div>
                                         <h5 class="uk-margin-small-bottom">Stocks Market</h5>
@@ -378,7 +378,7 @@
                             <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-medium">
                                 <div class="uk-flex uk-flex-middle">
                                     <div class="uk-margin-right">
-                                        <img src="img/in-lazy.gif" data-src="img/in-equity-11-icon-rs.svg" alt="icon-7" width="128" data-height data-uk-img>
+                                        <img src="images/{{$settings->logo}}" data-src="img/in-equity-11-icon-rs.svg" alt="icon-7" width="128" data-height data-uk-img>
                                     </div>
                                     <div>
                                         <h5 class="uk-margin-small-bottom">Real Estate Market</h5>
@@ -439,7 +439,7 @@
                                 </div>
                             </div>
                             <div class="uk-width-3-5@m">
-                                <img class="in-img-mockup" src="img/in-lazy.gif" data-src="img/in-equity-12-mockup.png" alt="mockup" width="643" data-height data-uk-img>
+                                <img class="in-img-mockup" src="images/{{$settings->logo}}" data-src="img/in-equity-12-mockup.png" alt="mockup" width="643" data-height data-uk-img>
                             </div>
                         </div>
                     </div>
@@ -622,21 +622,21 @@
                     <div>
                         <h4 class="uk-heading-bullet">Legal</h4>
                         <ul class="uk-list uk-link-text">
-                            <li><a href="https://zingkrypt.com/terms">Terms &amp; Conditions</a></li>
+                            <li><a href="{{$settings->contact_emmail}}terms">Terms &amp; Conditions</a></li>
                         </ul>
                     </div>
                     <div class="uk-visible@m">
                         <h4 class="uk-heading-bullet">Support</h4>
                         <ul class="uk-list uk-link-text">
-                            <li><a href="https://zingkrypt.com/about">About Us</a></li>
-                            <li><a href="https://zingkrypt.com/contact">Contact Us</a></li>
+                            <li><a href="{{$settings->contact_emmail}}about">About Us</a></li>
+                            <li><a href="{{$settings->contact_emmail}}contact">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="uk-flex-first uk-flex-last@m">
                         <ul class="uk-list uk-link-text">
-                            <li><img class="uk-margin-small-bottom" src="img/in-logo.svg" data-src="img/in-logo.svg" alt="logo" width="130" height="36"></li>
-                            <li><a href="#"><i class="fas fa-phone uk-margin-small-right"></i> +1 (803) 398-3209</a></li>
-                            <li><a href="#"><i class="fas fa-envelope uk-margin-small-right"></i> support@zingkrypt.com</a></li>
+                            <li><img class="uk-margin-small-bottom" src="images/{{$settings->logo}}" data-src="images/{{$settings->logo}}" alt="logo" width="130" height="36"></li>
+                            <li><a href="#"><i class="fas fa-phone uk-margin-small-right"></i> {{$settings->contact_number}}</a></li>
+                            <li><a href="#"><i class="fas fa-envelope uk-margin-small-right"></i> {{$settings->contact_emmail}}</a></li>
                             <li><a href="#"><i class="fas fa-map-marker-alt uk-margin-small-right"></i> 514 S. Magnolia St. Orlando, FL 32806 </a></li>
                         </ul>
                     </div>
@@ -649,7 +649,7 @@
                         </div>
                     </div>
                     <div class="uk-width-2-2@m in-copyright-text">
-                        <p>© Zingkrypt 2023. All rights reserved.</p>
+                        <p>© {{$settings->site_name}} 2023. All rights reserved.</p>
                     </div>
                 </div>
             </div>

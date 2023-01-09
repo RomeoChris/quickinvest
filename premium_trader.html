@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#FCB42D" />
     <!-- Site Properties -->
-    <title>Premium trader - Zingkrypt</title>
+    <title>Premium trader - {{$settings->site_name}}</title>
     <!-- critical preload -->
     <link rel="preload" href="js/vendors/uikit.min.js" as="script">
     <link rel="preload" href="css/vendors/uikit.min.css" as="style">
@@ -44,7 +44,7 @@
                         <div class="uk-navbar-item">
                             <!-- logo begin -->
                             <a class="uk-logo" href="index">
-                                <img src="img/in-lazy.gif" data-src="img/in-logo.svg" alt="logo" width="146" height="39" data-uk-img>
+                                <img src="images/{{$settings->logo}}" data-src="images/{{$settings->logo}}" alt="logo" width="146" height="39" data-uk-img>
                             </a>
                             <!-- logo end -->
                             <!-- navigation begin -->
@@ -86,13 +86,13 @@
                                                 <a href="bitcoin.html">Cryptocurrency</a>
                                               </li>
                                               <li>
-                                                <a href="#">Gold</a>
+                                                <a href="gold.html">Gold</a>
                                               </li>
                                               <li>
-                                                <a href="#">Real Estate</a></a>
+                                                <a href="real_estate.html">Real Estate</a></a>
                                               </li>
                                               <li>
-                                                <a href="#">Bonds</a></a>
+                                                <a href="bonds.html">Bonds</a></a>
                                               </li>
                                         </ul>
                                     </div>
@@ -211,7 +211,7 @@
                             <h1><span class="in-highlight">Powerful</span> Trading Platform</h1>
                         </div>
                         <p class="uk-text-lead uk-margin-remove-top uk-text-justify" style="color: black;">
-                            Our free platforms give you direct access to the zingkrypt exchange and multiple global markets with free real-time indicative data. The only fees you ever pay on our platform are the transaction costs of each trade.
+                            Our free platforms give you direct access to the {{$settings->site_name}} exchange and multiple global markets with free real-time indicative data. The only fees you ever pay on our platform are the transaction costs of each trade.
                             <br>
                             Log in and trade from any PC (Windows, Mac, or Linux) wherever you are. No download needed, just your email and password.
                             You can even place an order using the Premium Trader, then manage and exit the trade using your Premium Trader platform. 
@@ -234,7 +234,7 @@
                         <p class="uk-text-lead uk-margin-remove-top uk-text-justify" style="color: black;">
                             On the Premium Trader platform, you’re streaming real-time indicative market data directly from the exchange. See the bid and offer price with the volume of contracts available.
                             <br>
-                            As a member of the zingkrypt platform, you don't go through a broker. You send your orders direct to the exchange.
+                            As a member of the {{$settings->site_name}} platform, you don't go through a broker. You send your orders direct to the exchange.
                             For technical analysts who use charts, our ladder charts feature a price ladder with buy and sell buttons. Go from analysis to order placement, all in the same window.
                         </p>
                     </div>
@@ -261,21 +261,21 @@
                     <div>
                         <h4 class="uk-heading-bullet">Legal</h4>
                         <ul class="uk-list uk-link-text">
-                            <li><a href="https://zingkrypt.com/terms">Terms &amp; Conditions</a></li>
+                            <li><a href="{{$settings->contact_emmail}}terms">Terms &amp; Conditions</a></li>
                         </ul>
                     </div>
                     <div class="uk-visible@m">
                         <h4 class="uk-heading-bullet">Support</h4>
                         <ul class="uk-list uk-link-text">
-                            <li><a href="https://zingkrypt.com/about">About Us</a></li>
-                            <li><a href="https://zingkrypt.com/contact">Contact Us</a></li>
+                            <li><a href="{{$settings->contact_emmail}}about">About Us</a></li>
+                            <li><a href="{{$settings->contact_emmail}}contact">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="uk-flex-first uk-flex-last@m">
                         <ul class="uk-list uk-link-text">
-                            <li><img class="uk-margin-small-bottom" src="img/in-logo.svg" data-src="img/in-logo.svg" alt="logo" width="130" height="36"></li>
-                            <li><a href="#"><i class="fas fa-phone uk-margin-small-right"></i> +1 (803) 398-3209</a></li>
-                            <li><a href="#"><i class="fas fa-envelope uk-margin-small-right"></i> support@zingkrypt.com</a></li>
+                            <li><img class="uk-margin-small-bottom" src="images/{{$settings->logo}}" data-src="images/{{$settings->logo}}" alt="logo" width="130" height="36"></li>
+                            <li><a href="#"><i class="fas fa-phone uk-margin-small-right"></i> {{$settings->contact_number}}</a></li>
+                            <li><a href="#"><i class="fas fa-envelope uk-margin-small-right"></i> {{$settings->contact_emmail}}</a></li>
                             <li><a href="#"><i class="fas fa-map-marker-alt uk-margin-small-right"></i> 514 S. Magnolia St. Orlando, FL 32806 </a></li>
                         </ul>
                     </div>
@@ -288,7 +288,7 @@
                         </div>
                     </div>
                     <div class="uk-width-2-2@m in-copyright-text">
-                        <p>© Zingkrypt 2023. All rights reserved.</p>
+                        <p>© {{$settings->site_name}} 2023. All rights reserved.</p>
                     </div>
                 </div>
             </div>

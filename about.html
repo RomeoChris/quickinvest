@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#FCB42D" />
     <!-- Site Properties -->
-    <title>Homepage - Zingkrypt</title>
+    <title>{{$title}} - {{$settings->site_name}}</title>
     <!-- critical preload -->
     <link rel="preload" href="js/vendors/uikit.min.js" as="script">
     <link rel="preload" href="css/vendors/uikit.min.css" as="style">
@@ -44,7 +44,7 @@
                         <div class="uk-navbar-item">
                             <!-- logo begin -->
                             <a class="uk-logo" href="index">
-                                <img src="img/in-lazy.gif" data-src="img/in-logo.svg" alt="logo" width="146" height="39" data-uk-img>
+                                <img src="images/{{$settings->logo}}" data-src="images/{{$settings->logo}}" alt="logo" width="146" height="39" data-uk-img>
                             </a>
                             <!-- logo end -->
                             <!-- navigation begin -->
@@ -86,13 +86,13 @@
                                                 <a href="bitcoin.html">Cryptocurrency</a>
                                               </li>
                                               <li>
-                                                <a href="#">Gold</a>
+                                                <a href="gold.html">Gold</a>
                                               </li>
                                               <li>
-                                                <a href="#">Real Estate</a></a>
+                                                <a href="real_estate.html">Real Estate</a></a>
                                               </li>
                                               <li>
-                                                <a href="#">Bonds</a></a>
+                                                <a href="bonds.html">Bonds</a></a>
                                               </li>
                                         </ul>
                                     </div>
@@ -192,13 +192,13 @@
                 <div class="uk-grid">
                     <div class="uk-width-1-2@m">
                         <div>
-                            <h1>About <span class="in-highlight">Zingkrypt</span></h1>
+                            <h1>About <span class="in-highlight">{{$settings->site_name}}</span></h1>
                         </div>
                         <p class="uk-text-lead uk-margin-remove-top uk-text-justify" style="color: black;">
-                             zingkrypt is one of the leading platforms in Switzerland offering Crude Oil Trading, Forex and spreads. Regulated by the CFTC and based in New York, with member funds held in segregated accounts in major US banks,  zingkrypt offers secure and innovative ways to participate in the markets.
+                             {{$settings->site_name}} is one of the leading platforms in the United States offering Crude Oil Trading, Forex and spreads. Regulated by the CFTC and based in New York, with member funds held in segregated accounts in major US banks,  {{$settings->site_name}} offers secure and innovative ways to participate in the markets.
                             <br>
                             <br>
-                            Using  zingkrypt online, traders can take positions on short-term price movements in a wide range of markets. From one account, you can                           trade stock indices, forex, commodities, bitcoin, and economic events. With 5000 hourly, daily and weekly contracts traded 5 days a week,                           24 hours a day,  zingkrypt traders get an ongoing series of short-term trading opportunities.
+                            Using  {{$settings->site_name}} online, traders can take positions on short-term price movements in a wide range of markets. From one account, you can                           trade stock indices, forex, commodities, bitcoin, and economic events. With 5000 hourly, daily and weekly contracts traded 5 days a week,                           24 hours a day,  {{$settings->site_name}} traders get an ongoing series of short-term trading opportunities.
                             <br>
                             <br>
                             We help our clients trade financial markets on leverage through CFDs. This product allows you to find opportunity in both rising and                            falling markets, and isn't confined to one asset class – you can choose to trade on indices, forex, shares, commodities and more:
@@ -208,9 +208,9 @@
                     <div class="uk-width-1-2@m">
                         <br>
                         <br>
-                        <img class="in-img-mockup" src="img/in-lazy.gif" data-src="img/in-equity-12-mockup.png" alt="mockup" width="643" data-height data-uk-img>
+                        <img class="in-img-mockup" src="images/{{$settings->logo}}" data-src="img/in-equity-12-mockup.png" alt="mockup" width="643" data-height data-uk-img>
                     <p class="uk-text-lead uk-margin-remove-top uk-text-justify" style="color: black;">
-                            zingkrypt is also regulated by the International Financial Services Commission of Belize, as well as the Cyprus Securities and Exchange                          Commission, licensed by the Financial Services Board (FSB) of Switzerland. The company is also registered with the Financial Conduct                            Authority of the UK.
+                            {{$settings->site_name}} is also regulated by the International Financial Services Commission of Belize, as well as the Cyprus Securities and Exchange                          Commission, licensed by the Financial Services Board (FSB) of Switzerland. The company is also registered with the Financial Conduct                            Authority of the UK.
                     </p>
                 </div>
                 </div>
@@ -323,7 +323,7 @@
                     <div>
                         <div class="uk-flex uk-flex-left uk-flex-middle">
                             <div class="uk-margin-right in-award-logo">
-                                <img src="img/in-lazy.gif" data-src="img/in-equity-5-award-3.svg" alt="award" width="128" data-height data-uk-img>
+                                <img src="images/{{$settings->logo}}" data-src="img/in-equity-5-award-3.svg" alt="award" width="128" data-height data-uk-img>
                             </div>
                             <div class="in-award-badge">
                                 <h3 class="uk-margin-remove">Traders #1 Choice</h3>
@@ -363,21 +363,21 @@
                     <div>
                         <h4 class="uk-heading-bullet">Legal</h4>
                         <ul class="uk-list uk-link-text">
-                            <li><a href="https://zingkrypt.com/terms">Terms &amp; Conditions</a></li>
+                            <li><a href="{{$settings->contact_emmail}}terms">Terms &amp; Conditions</a></li>
                         </ul>
                     </div>
                     <div class="uk-visible@m">
                         <h4 class="uk-heading-bullet">Support</h4>
                         <ul class="uk-list uk-link-text">
-                            <li><a href="https://zingkrypt.com/about">About Us</a></li>
-                            <li><a href="https://zingkrypt.com/contact">Contact Us</a></li>
+                            <li><a href="{{$settings->contact_emmail}}about">About Us</a></li>
+                            <li><a href="{{$settings->contact_emmail}}contact">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="uk-flex-first uk-flex-last@m">
                         <ul class="uk-list uk-link-text">
-                            <li><img class="uk-margin-small-bottom" src="img/in-logo.svg" data-src="img/in-logo.svg" alt="logo" width="130" height="36"></li>
-                            <li><a href="#"><i class="fas fa-phone uk-margin-small-right"></i> +1 (803) 398-3209</a></li>
-                            <li><a href="#"><i class="fas fa-envelope uk-margin-small-right"></i> support@zingkrypt.com</a></li>
+                            <li><img class="uk-margin-small-bottom" src="images/{{$settings->logo}}" data-src="images/{{$settings->logo}}" alt="logo" width="130" height="36"></li>
+                            <li><a href="#"><i class="fas fa-phone uk-margin-small-right"></i> {{$settings->contact_number}}</a></li>
+                            <li><a href="#"><i class="fas fa-envelope uk-margin-small-right"></i> {{$settings->contact_emmail}}</a></li>
                             <li><a href="#"><i class="fas fa-map-marker-alt uk-margin-small-right"></i> 514 S. Magnolia St. Orlando, FL 32806 </a></li>
                         </ul>
                     </div>
@@ -390,7 +390,7 @@
                         </div>
                     </div>
                     <div class="uk-width-2-2@m in-copyright-text">
-                        <p>© Zingkrypt 2023. All rights reserved.</p>
+                        <p>© {{$settings->site_name}} 2023. All rights reserved.</p>
                     </div>
                 </div>
             </div>

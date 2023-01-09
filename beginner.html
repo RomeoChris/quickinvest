@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#FCB42D" />
     <!-- Site Properties -->
-    <title>Homepage - Zingkrypt</title>
+    <title>{{$title}} - {{$settings->site_name}}</title>
     <!-- critical preload -->
     <link rel="preload" href="js/vendors/uikit.min.js" as="script">
     <link rel="preload" href="css/vendors/uikit.min.css" as="style">
@@ -44,7 +44,7 @@
                         <div class="uk-navbar-item">
                             <!-- logo begin -->
                             <a class="uk-logo" href="index">
-                                <img src="img/in-lazy.gif" data-src="img/in-logo.svg" alt="logo" width="146" height="39" data-uk-img>
+                                <img src="images/{{$settings->logo}}" data-src="images/{{$settings->logo}}" alt="logo" width="146" height="39" data-uk-img>
                             </a>
                             <!-- logo end -->
                             <!-- navigation begin -->
@@ -86,13 +86,13 @@
                                                 <a href="bitcoin.html">Cryptocurrency</a>
                                               </li>
                                               <li>
-                                                <a href="#">Gold</a>
+                                                <a href="gold.html">Gold</a>
                                               </li>
                                               <li>
-                                                <a href="#">Real Estate</a></a>
+                                                <a href="real_estate.html">Real Estate</a></a>
                                               </li>
                                               <li>
-                                                <a href="#">Bonds</a></a>
+                                                <a href="bonds.html">Bonds</a></a>
                                               </li>
                                         </ul>
                                     </div>
@@ -215,7 +215,7 @@
                         </p>
                     </div>
                     <div class="uk-width-1-2@m">
-                        <img class="in-img-mockup" src="img/in-lazy.gif" data-src="img/phone-forex.png" alt="mockup" width="643" data-height="300" data-uk-img style="height: auto;">
+                        <img class="in-img-mockup" src="images/{{$settings->logo}}" data-src="img/phone-forex.png" alt="mockup" width="643" data-height="300" data-uk-img style="height: auto;">
                 </div>
                 </div>
             </div>
@@ -240,21 +240,21 @@
                     <div>
                         <h4 class="uk-heading-bullet">Legal</h4>
                         <ul class="uk-list uk-link-text">
-                            <li><a href="https://zingkrypt.com/terms">Terms &amp; Conditions</a></li>
+                            <li><a href="{{$settings->contact_emmail}}terms">Terms &amp; Conditions</a></li>
                         </ul>
                     </div>
                     <div class="uk-visible@m">
                         <h4 class="uk-heading-bullet">Support</h4>
                         <ul class="uk-list uk-link-text">
-                            <li><a href="https://zingkrypt.com/about">About Us</a></li>
-                            <li><a href="https://zingkrypt.com/contact">Contact Us</a></li>
+                            <li><a href="{{$settings->contact_emmail}}about">About Us</a></li>
+                            <li><a href="{{$settings->contact_emmail}}contact">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="uk-flex-first uk-flex-last@m">
                         <ul class="uk-list uk-link-text">
-                            <li><img class="uk-margin-small-bottom" src="img/in-logo.svg" data-src="img/in-logo.svg" alt="logo" width="130" height="36"></li>
-                            <li><a href="#"><i class="fas fa-phone uk-margin-small-right"></i> +1 (803) 398-3209</a></li>
-                            <li><a href="#"><i class="fas fa-envelope uk-margin-small-right"></i> support@zingkrypt.com</a></li>
+                            <li><img class="uk-margin-small-bottom" src="images/{{$settings->logo}}" data-src="images/{{$settings->logo}}" alt="logo" width="130" height="36"></li>
+                            <li><a href="#"><i class="fas fa-phone uk-margin-small-right"></i> {{$settings->contact_number}}</a></li>
+                            <li><a href="#"><i class="fas fa-envelope uk-margin-small-right"></i> {{$settings->contact_emmail}}</a></li>
                             <li><a href="#"><i class="fas fa-map-marker-alt uk-margin-small-right"></i> 514 S. Magnolia St. Orlando, FL 32806 </a></li>
                         </ul>
                     </div>
@@ -267,7 +267,7 @@
                         </div>
                     </div>
                     <div class="uk-width-2-2@m in-copyright-text">
-                        <p>© Zingkrypt 2023. All rights reserved.</p>
+                        <p>© {{$settings->site_name}} 2023. All rights reserved.</p>
                     </div>
                 </div>
             </div>
